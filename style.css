@@ -1,0 +1,96 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid black; */ 
+  }
+  
+
+body{
+    background-color: #f4f4f4;
+}
+
+  header {
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding:15px 10px;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  button {
+    background-color: #ff4d4d;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px; 
+  }
+  
+  button:hover {
+    background-color: #970000;
+  }
+  
+  #container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    /* max-width: 1200px; */
+    
+    margin-top: 25px;
+    justify-content: center;
+  }
+  
+  #editor, #preview {
+    flex: 1;
+    height: 75vh;
+    min-width: 300px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #c5c5c5;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #editor {
+    margin-right: 10px;
+  }
+  
+  textarea {
+    height: 70vh;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+  }
+  
+  #preview {
+    overflow-y: auto;
+    min-height: 300px;
+    word-wrap: break-word;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #container {
+      flex-direction: column;   
+      height: 90vh;
+    }
+    #editor, #preview {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+    textarea{
+        height: 300px;
+    }
+  }
+  
