@@ -10,6 +10,9 @@ This is a simple text to markdown converter. You can type in the text area and s
 - Convert text to markdown
 - Clear text area and preview
 - Code highlighting
+- <img src="https://github.com/user-attachments/assets/a3d9d2db-223f-47dd-8146-b90d89a2a0e3" width="50%">
+
+
 
 ## How to use
 
